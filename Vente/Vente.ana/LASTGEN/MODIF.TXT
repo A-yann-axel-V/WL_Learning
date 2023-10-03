@@ -1,0 +1,8 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+Article		NFI		nouveau fichier
+Vente		NFI		nouveau fichier
+Article_Vendu		NFI		nouveau fichier
+Contrainte_Vente_Article		NWL	Vente (Numero) et Article_Vendu (Numero)	Nouvelle liaison entre les fichiers Vente (Numero) et Article_Vendu (Numero)
+Contrainte_Article_Vente		NWL	Article (IDArticle) et Article_Vendu (IDArticle)	Nouvelle liaison entre les fichiers Article (IDArticle) et Article_Vendu (IDArticle)
+Contrainte_Client_Article		NWL	Client (IDClient) et Article (IDClient)	Nouvelle liaison entre les fichiers Client (IDClient) et Article (IDClient)
+Article_Vendu		FRN		

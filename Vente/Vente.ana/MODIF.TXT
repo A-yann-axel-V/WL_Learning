@@ -1,0 +1,24 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+Client		TAR	123	nouvelle taille enregistrement : 123
+Client	ID	NNR	IDClient	ATTENTION : la clé IDClient a pour nouveau nom ID
+Client	Nom	RUB+		Nom est une nouvelle rubrique
+Client	Prenom	RUB+		Prenom est une nouvelle rubrique
+Client	Contact	RUB+		Contact est une nouvelle rubrique
+Article		TAR	78	nouvelle taille enregistrement : 78
+Article	IDClient	RUB-		la clé IDClient est supprimée
+Vente		TAR	42	nouvelle taille enregistrement : 42
+Vente	ID	NNR	Numero	ATTENTION : la clé Numero a pour nouveau nom ID
+Vente	Date	RUB+		Date est une nouvelle rubrique
+Vente	IDVendeur	RUB+		IDVendeur est une nouvelle clé
+Vente	IDClient	RUB+		IDClient est une nouvelle clé
+Vendeur		NFI		nouveau fichier
+Detail_Vente		NFI		nouveau fichier
+Article_Vendu		FIC-	Article_Vendu	Fichier supprimé Article_Vendu
+Contrainte_Article_Vente		NWL	Article (IDArticle) et Detail_Vente (IDArticle)	Nouvelle liaison entre les fichiers Article (IDArticle) et Detail_Vente (IDArticle)
+Contrainte_Vente_Article		NWL	Vente (ID) et Detail_Vente (IDVente)	Nouvelle liaison entre les fichiers Vente (ID) et Detail_Vente (IDVente)
+Contrainte_Vendeur_Vente		NWL	Vendeur (ID) et Vente (IDVendeur)	Nouvelle liaison entre les fichiers Vendeur (ID) et Vente (IDVendeur)
+Contrainte_Vente_Client		NWL	Client (ID) et Vente (IDClient)	Nouvelle liaison entre les fichiers Client (ID) et Vente (IDClient)
+Contrainte_Vente_Article		DEL	Vente (Numero) et Article_Vendu (Numero)	Liaison supprimée entre les fichiers Vente (Numero) et Article_Vendu (Numero)
+Contrainte_Article_Vente		DEL	Article (IDArticle) et Article_Vendu (IDArticle)	Liaison supprimée entre les fichiers Article (IDArticle) et Article_Vendu (IDArticle)
+Contrainte_Client_Article		DEL	Client (IDClient) et Article (IDClient)	Liaison supprimée entre les fichiers Client (IDClient) et Article (IDClient)
+Detail_Vente		FRN		
