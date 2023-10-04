@@ -1,0 +1,3 @@
+//MO005-006.TXT ANA00005 TO ANA00006
+Client		TAR	179	nouvelle taille enregistrement : 179
+Client	Civilité	CNW	Chaîne$Entier sur 2 octets	la rubrique Civilité a pour nouveau type Chaîne

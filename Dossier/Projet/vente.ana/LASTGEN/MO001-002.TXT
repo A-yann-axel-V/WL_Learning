@@ -1,0 +1,23 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+Client		NFI		nouveau fichier
+Vente		NFI		nouveau fichier
+Vendeur		NFI		nouveau fichier
+DetailVente		NFI		nouveau fichier
+Produit		NFI		nouveau fichier
+BDVente		FIC-	BDVente	Fichier supprimé BDVente
+Contrainte_Client_Vente		NWL	Client (IDClient) et Vente (IDClient)	Nouvelle liaison entre les fichiers Client (IDClient) et Vente (IDClient)
+Contrainte_Vente_Veudeur		NWL	Vendeur (IDVeudeur) et Vente (IDVeudeur)	Nouvelle liaison entre les fichiers Vendeur (IDVeudeur) et Vente (IDVeudeur)
+Contrainte_Vente_Produit		NWL	Vente (IDVente) et DetailVente (IDVente)	Nouvelle liaison entre les fichiers Vente (IDVente) et DetailVente (IDVente)
+Contrainte_Produit_Vente		NWL	Produit (Référence) et DetailVente (Référence)	Nouvelle liaison entre les fichiers Produit (Référence) et DetailVente (Référence)
+Vendeur		FRN		
+DetailVente		FRN		
+Client	IDClient	RRN		
+Client	Civilité	RRN		
+Client	Nom	RRN		
+Client	Prénom	RRN		
+Client	Mobile	RRN		
+Vente	IDClient	RRN		
+Vente	IDVeudeur	RRN		
+Produit	IDProduit	RRN		
+Produit	Référence	RRN		
+Produit	Libellé	RRN		

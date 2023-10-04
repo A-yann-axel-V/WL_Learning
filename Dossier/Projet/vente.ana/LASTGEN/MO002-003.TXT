@@ -1,0 +1,25 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+Client	Nom	CLE-*		la rubrique Nom n'est plus une clé
+Client	Mobile	CLE-*		la rubrique Mobile n'est plus une clé
+Vente		TAR	57	nouvelle taille enregistrement : 57
+Vente	Datevente	CLE-*		la rubrique Datevente n'est plus une clé
+Vente	Montant	RUB+		Montant est une nouvelle rubrique
+Vente	IDVend	RUB+		IDVend est une nouvelle clé
+Vente	IDClit	RUB+		IDClit est une nouvelle clé
+Vente	IDClient	RUB-		la clé IDClient est supprimée
+Vente	IDVeudeur	RUB-		la clé IDVeudeur est supprimée
+Vente	Total	RUB-		la rubrique Total est supprimée
+Vendeur	IDVendeur	NNR	IDVeudeur	ATTENTION : la clé IDVeudeur a pour nouveau nom IDVendeur
+Vendeur	Nom	CLE-*		la rubrique Nom n'est plus une clé
+Vendeur	Mobile	CLE-*		la rubrique Mobile n'est plus une clé
+DetailVente		TAR	52	nouvelle taille enregistrement : 52
+DetailVente	Montant	RUB+		Montant est une nouvelle rubrique
+DetailVente	Quantite	RUB+		Quantite est une nouvelle rubrique
+Produit		TAR	91	nouvelle taille enregistrement : 91
+Produit	Libellé	CLE-*		la rubrique Libellé n'est plus une clé
+Produit	Quantité	RUB-		la rubrique Quantité est supprimée
+Produit	Total	RUB-		la rubrique Total est supprimée
+Contrainte_Vente_Client		NWL	Client (IDClient) et Vente (IDClit)	Nouvelle liaison entre les fichiers Client (IDClient) et Vente (IDClit)
+Contrainte_Vente_Vendeur		NWL	Vendeur (IDVendeur) et Vente (IDVend)	Nouvelle liaison entre les fichiers Vendeur (IDVendeur) et Vente (IDVend)
+Contrainte_Client_Vente		DEL	Client (IDClient) et Vente (IDClient)	Liaison supprimée entre les fichiers Client (IDClient) et Vente (IDClient)
+Contrainte_Vente_Veudeur		DEL	Vendeur (IDVeudeur) et Vente (IDVeudeur)	Liaison supprimée entre les fichiers Vendeur (IDVeudeur) et Vente (IDVeudeur)
