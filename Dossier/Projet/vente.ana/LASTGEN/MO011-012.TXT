@@ -1,0 +1,6 @@
+//MO011-012.TXT ANA00011 TO ANA00012
+Contrainte_Vente_Client		MCL	1,1->0,1	
+Client	Civilité	RRM		
+Client	Nom	RRM		
+Client	Prénom	RRM		
+Client	Adresse	RRN		
