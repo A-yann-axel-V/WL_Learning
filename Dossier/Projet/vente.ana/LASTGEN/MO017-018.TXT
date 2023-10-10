@@ -1,0 +1,18 @@
+//MO017-018.TXT ANA00017 TO ANA00018
+Produit		TAR	103	nouvelle taille enregistrement : 103
+Produit	Stock	RUB+		Stock est une nouvelle rubrique
+Produit	IDCatégorie	RUB+		IDCatégorie est une nouvelle clé
+Catégorie		NFI		nouveau fichier
+Fournisseur		NFI		nouveau fichier
+Commande		NFI		nouveau fichier
+Mouvement		NFI		nouveau fichier
+Produit_Mouvement		NFI		nouveau fichier
+Produit_Commande		NFI		nouveau fichier
+Fournisseur_Produit		NFI		nouveau fichier
+Contrainte_Produit_Mouvement		NWL	Produit (Référence) et Produit_Mouvement (Référence)	Nouvelle liaison entre les fichiers Produit (Référence) et Produit_Mouvement (Référence)
+Contrainte_Mouvement_Produit		NWL	Mouvement (IDMouvement) et Produit_Mouvement (IDMouvement)	Nouvelle liaison entre les fichiers Mouvement (IDMouvement) et Produit_Mouvement (IDMouvement)
+Contrainte_Produit_Commande		NWL	Produit (Référence) et Produit_Commande (Référence)	Nouvelle liaison entre les fichiers Produit (Référence) et Produit_Commande (Référence)
+Contrainte_Commande_Produit		NWL	Commande (IDCommande) et Produit_Commande (IDCommande)	Nouvelle liaison entre les fichiers Commande (IDCommande) et Produit_Commande (IDCommande)
+Contrainte_Produit_Catégorie		NWL	Catégorie (IDCatégorie) et Produit (IDCatégorie)	Nouvelle liaison entre les fichiers Catégorie (IDCatégorie) et Produit (IDCatégorie)
+Contrainte_Fournisseur_Produit		NWL	Fournisseur (IDFournisseur) et Fournisseur_Produit (IDFournisseur)	Nouvelle liaison entre les fichiers Fournisseur (IDFournisseur) et Fournisseur_Produit (IDFournisseur)
+Contrainte_Produit_Fournisseur		NWL	Produit (Référence) et Fournisseur_Produit (Référence)	Nouvelle liaison entre les fichiers Produit (Référence) et Fournisseur_Produit (Référence)
